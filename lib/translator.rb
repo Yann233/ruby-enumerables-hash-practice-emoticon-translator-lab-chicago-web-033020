@@ -40,7 +40,7 @@ def get_english_meaning(file_path, emoticon)
 #  meaning ? meaning : "Sorry, that emoticon was not found"
 
   if meaning == nil
-    meaning = "Sorry, that emoticon was not found" 
+    meaning = "Sorry, that emoticon was not found"
   end
   meaning
 end
