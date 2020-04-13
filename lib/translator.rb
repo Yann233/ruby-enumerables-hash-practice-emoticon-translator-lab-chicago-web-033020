@@ -1,4 +1,4 @@
-# require modules here
+# Other ways: https://github.com/deniznida/emoticon-translator-ruby-007-public/blob/master/lib/translator.rb
 require "yaml"
 
 def load_library(file_path)
