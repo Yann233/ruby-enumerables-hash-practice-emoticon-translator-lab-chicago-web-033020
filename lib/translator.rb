@@ -31,7 +31,7 @@ def get_japanese_emoticon(file_path, emoticon)
   if japanese_emoticon == nil
     japanese_emoticon = "Sorry, that emoticon was not found"
   end
-  result
+  japanese_emoticon
 end
 
 # It will take a Japanese emoticon and returns its meaning in English.
