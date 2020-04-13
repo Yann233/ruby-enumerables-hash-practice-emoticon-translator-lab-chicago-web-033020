@@ -8,10 +8,12 @@ def load_library(file_path)
   library.each do |meaning, emoticons|
     #the keys inside the 'get_meaning' hash are the Japanese emoticons
     #the emoticon keys inside the 'get_meaning' hash point to their meanings
-    binding.pry
+  #{"get_meaning"=>{"☜(⌒▽⌒)☞"=>"angel"}
   result["get_meaning"][emoticons[1]] = meaning
   #the keys inside the 'get_emoticon' hash are the English emoticons
   #the emoticon keys inside the 'get_emoticon' hash point to their Japanese equivalents
+  #"get_emoticon"=>{"O:)"=>"☜
+(⌒▽⌒)☞"}
   result["get_emoticon"][emoticons[0]] = emoticons[1]
   end
   result
