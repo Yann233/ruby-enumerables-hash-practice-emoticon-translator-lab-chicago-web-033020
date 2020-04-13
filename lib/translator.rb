@@ -32,7 +32,6 @@ end
 # It will take a Japanese emoticon and returns its meaning in English.
 # This method will also rely on load_library to first load the YAML file.
 def get_english_meaning(file_path, emoticon)
-    binding.pry
   meaning = load_library(file_path)['get_meaning'][emoticon]  #sad
   meaning ? meaning : "Sorry, that emoticon was not found"
 end
