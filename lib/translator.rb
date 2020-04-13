@@ -22,11 +22,15 @@ def load_library(file_path)
   # {"get_meaning"=>{"☜(⌒▽⌒)☞"=>"angel"}, "get_emoticon"=>{"O:)"=>"☜(⌒▽⌒)☞"}}
 end
 
+
+# This method will take a traditional Western emoticon, like :) and translate it to its Japanese version. 
+#It will rely load_library to work. Refer to the table below for translations
 def get_japanese_emoticon(file_path, emoticon)
   japanese_emoticon = load_library(file_path)['get_emoticon'][emoticon]
   japanese_emoticon ? japanese_emoticon : "Sorry, that emoticon was not found"
 
 end
+
 
 def get_english_meaning(file_path, emoticon)
   meaning = load_library(file_path)['get_meaning'][emoticon]
