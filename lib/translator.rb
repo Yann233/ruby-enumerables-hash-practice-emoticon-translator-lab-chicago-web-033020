@@ -26,17 +26,21 @@ end
 # It will rely load_library to work. Refer to the table below for translations
 def get_japanese_emoticon(file_path, emoticon)
   japanese_emoticon = load_library(file_path)["get_emoticon"][emoticon] # "(＾ｖ＾)"
-  # japanese_emoticon ? japanese_emoticon : "Sorry, that emoticon was not found"
-
-  if japanese_emoticon == nil
-    japanese_emoticon = "Sorry, that emoticon was not found"
-  end
-  japanese_emoticon
+   japanese_emoticon ? japanese_emoticon : "Sorry, that emoticon was not found"
+  # if japanese_emoticon == nil
+  #   japanese_emoticon = "Sorry, that emoticon was not found"
+  # end
+  # japanese_emoticon
 end
 
 # It will take a Japanese emoticon and returns its meaning in English.
 # This method will also rely on load_library to first load the YAML file.
 def get_english_meaning(file_path, emoticon)
   meaning = load_library(file_path)["get_meaning"][emoticon]  #sad
-  meaning ? meaning : "Sorry, that emoticon was not found"
+#  meaning ? meaning : "Sorry, that emoticon was not found"
+
+  if meaning == nil
+    meaning = "Sorry, that emoticon was not found" 
+  end
+  meaning
 end
