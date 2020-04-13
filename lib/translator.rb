@@ -24,6 +24,7 @@ end
 
 # This method will take a traditional Western emoticon, like :) and translate it to its Japanese version.
 # It will rely load_library to work. Refer to the table below for translations
+    binding.pry
 def get_japanese_emoticon(file_path, emoticon)
   japanese_emoticon = load_library(file_path)['get_emoticon'][emoticon]
   japanese_emoticon ? japanese_emoticon : "Sorry, that emoticon was not found"
