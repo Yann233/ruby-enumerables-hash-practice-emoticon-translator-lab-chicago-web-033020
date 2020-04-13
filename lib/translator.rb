@@ -9,7 +9,6 @@ def load_library(file_path)
     #the keys inside the 'get_meaning' hash are the Japanese emoticons
     #the emoticon keys inside the 'get_meaning' hash point to their meanings
   result["get_meaning"][emoticons[1]] = meaning
-  binding.pry
   #the keys inside the 'get_emoticon' hash are the English emoticons
   #the emoticon keys inside the 'get_emoticon' hash point to their Japanese equivalents
   end
