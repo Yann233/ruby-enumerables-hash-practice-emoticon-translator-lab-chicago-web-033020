@@ -10,12 +10,13 @@ def load_library(file_path)
     #the keys inside the 'get_meaning' hash are the Japanese emoticons
     #the emoticon keys inside the 'get_meaning' hash point to their meanings
   #{"get_meaning"=>{"☜(⌒▽⌒)☞"=>"angel"}
-  result["get_meaning"][emoticons[1]] = meaning  # "angel"  #emoticons[1]=> "☜(⌒▽⌒)☞"
+                       #emoticons[1]=> "☜(⌒▽⌒)☞"
+  result["get_meaning"][emoticons[1]] = meaning  # "angel"
   #the keys inside the 'get_emoticon' hash are the English emoticons
   #the emoticon keys inside the 'get_emoticon' hash point to their Japanese equivalents
   #"get_emoticon"=>{"O:)"=>"☜(⌒▽⌒)☞"}
+  #emoticons[0]=> "O:)"                 #emoticons[1]=> "☜(⌒▽⌒)☞"
   result["get_emoticon"][emoticons[0]] = emoticons[1]  #"☜(⌒▽⌒)☞"
-  #emoticons[0]=> "O:)"
   end
   result
 end
