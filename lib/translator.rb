@@ -26,7 +26,12 @@ end
 # It will rely load_library to work. Refer to the table below for translations
 def get_japanese_emoticon(file_path, emoticon)
   japanese_emoticon = load_library(file_path)["get_emoticon"][emoticon] # "(＾ｖ＾)"
-  japanese_emoticon ? japanese_emoticon : "Sorry, that emoticon was not found"
+  # japanese_emoticon ? japanese_emoticon : "Sorry, that emoticon was not found"
+
+  if japanese_emoticon == nil
+    japanese_emoticon = "Sorry, that emoticon was not found"
+  end
+  result
 end
 
 # It will take a Japanese emoticon and returns its meaning in English.
