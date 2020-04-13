@@ -1,4 +1,5 @@
 # Other ways: https://github.com/deniznida/emoticon-translator-ruby-007-public/blob/master/lib/translator.rb
+require 'pry'
 require "yaml"
 
 def load_library(file_path)
