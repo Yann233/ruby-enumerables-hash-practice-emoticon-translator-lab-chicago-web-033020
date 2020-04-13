@@ -19,6 +19,7 @@ def load_library(file_path)
   result["get_emoticon"][emoticons[0]] = emoticons[1]  #"☜(⌒▽⌒)☞"
   end
   result
+  # {"get_meaning"=>{"☜(⌒▽⌒)☞"=>"angel"}, "get_emoticon"=>{"O:)"=>"☜(⌒▽⌒)☞"}}
 end
 
 def get_japanese_emoticon(file_path, emoticon)
